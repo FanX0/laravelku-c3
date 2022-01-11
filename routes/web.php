@@ -31,8 +31,8 @@ Route::get('/market', function () {
     ]);
 });
 
-Route::get('/news', [BeritaController::class, 'index']);
-Route::get('/news/{news_detil:slug}',[BeritaController::class, 'show']);
+Route::get('/karakter', [BeritaController::class, 'index']);
+Route::get('/karakter/{more_karakter:slug}',[BeritaController::class, 'show']);
 
 Route::get('/login',[LoginController::class, 'index'])->name('login')->middleware('guest');
 Route::post('/login',[LoginController::class, 'authenticate']);

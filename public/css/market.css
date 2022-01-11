@@ -69,6 +69,8 @@
 	display: block;
 	padding-bottom: 150%;
 	width: 100%;
+	background-color:#000;
+	
   }
   
   .card__background{
@@ -117,11 +119,10 @@
 	line-height: 1.4;
   }
   .card_bottom{
-	position: absolute;
 	color: var(--text-lighter);
 	font-size: 1.5rem;
 	text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
 	border-radius: 0px;
-	padding-top: 185%;
+	padding-top: 245%;
 	text-align: left;
 }

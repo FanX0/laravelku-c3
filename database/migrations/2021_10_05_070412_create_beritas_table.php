@@ -16,10 +16,10 @@ class CreateBeritasTable extends Migration
         Schema::create('beritas', function (Blueprint $table) {
             $table->id();
             $table->foreignId('category_id');
-            $table->string('judul_berita');
+            $table->string('judul_karakter');
             $table->string('slug')->unique();
             $table->string('excerpt');
-            $table->string('isi_berita');
+            $table->string('isi_karakter');
             $table->timestamp('published_at')->nullable();
             $table->timestamps();
         });

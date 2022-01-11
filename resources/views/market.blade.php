@@ -1,6 +1,7 @@
 <head>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" href="/css/market.css">
+</head>
 <html>
         <nav class="navbar navbar-dark color:#111;">
                 <div class="container">
@@ -17,7 +18,7 @@
                         <a class="nav-link {{ Request::is('about')?'active' :'' }}" href="/market">Market</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link {{ Request::is('news')?'active' :'' }}" href="/news">News</a>
+                        <a class="nav-link {{ Request::is('news')?'active' :'' }}" href="/karakter">Karakter</a>
                       </li>
                     </ul>
                     <ul class="navbar-nav ms-auto">
@@ -53,7 +54,7 @@
 
 
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-
+<body>
         <section class="hero-section">
           <div class="card-grid">
             <a class="card" href="#">
@@ -140,12 +141,11 @@
             </a>
           <div>
         </section>
-
+</body>
         <footer>
-
-          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            © 2022 Copyright
-            <a class="text-white" >FanX</a>
+          <div class="text-center p-3" style="background-color: rgba(39, 39, 39, 0.2);">
+            <p style="color:#fff;">© 2022 Copyright 202102335 Farid Azhari Nurcahyo</p>
+      
           </div>
           <!-- Copyright -->
         </footer>

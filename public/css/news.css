@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Poppins',sans-serif;
+    scroll-behavior:smooth
+}
+
+body{
+    position:relative;
+	height: 100%;
+	top: 50px;
+    background-color: #313131;
+}
+.container
+{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:1200px;
+    flex-wrap: wrap;
+}
+.container .card
+{
+    position:relative;
+    width: 300px;
+    padding: 20px;
+    margin:20px;
+    background: #3f3f3f;
+}
+.container .card::before
+{
+    content:'';
+    position: absolute;
+    top:0;
+    right: 0;
+    border: 20px solid transparent;
+    border-top:20px solid #fff;
+    border-right: 20px solid #fff;
+}
+/* .container .card::before
+{
+    border-top:20px solid #ff3b7e;
+    border-right: 20px solid #ff3b7e;
+} */
+.container .card .content
+{
+    position:relative;
+    height: 215px;
+    overflow:hidden;
+}
+.container .card .active .content
+{
+    height: auto;
+}
+.container .card .content::before
+{
+    content:'';
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:100px;
+    background:linear-gradient(transparent#3f3f3f);
+}
+.container .card.active .content::before
+{
+    display:none;
+}
+.container .card .content h3
+{
+    color: #fff;
+    font-size:  1.4em;
+    font: weight 600;
+    margin-bottom: 10px;
+}
+.container .card .content p
+{
+    font-weight: 300;
+    color: #ccc;
+}
+.container .card .more
+{
+    position: relative;
+    padding:10px 15px;
+    background: #17e78c;
+    margin-top: 15px;
+    display: inline-block;
+    cursor:pointer;
+    text-transform:uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+} 
+.container .card .more::before
+{
+    content:'Read More';
+}
+.container .card.active .more::before
+{
+    content:'Read Less';
+}

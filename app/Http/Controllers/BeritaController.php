@@ -9,17 +9,17 @@ class BeritaController extends Controller
 {
     public function index()
     {
-        return view('news' , [
-            "title" => "NEWS",
-            "news" => Berita::all()
+        return view('karakter' , [
+            "title" => "Karakter",
+            "karakter" => Karakter::all()
             ]);
     }
     
-    public function show(Berita $news_detil)
+    public function show(Karakter $news_detil)
     {
-        return view('news_detil', [
+        return view('more_karakter', [
             "title" => "News Detil",
-            "news_posts" => $news_detil
+            "news_posts" => $more_karakter
         ]);
     }
 }

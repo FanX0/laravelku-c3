@@ -37,7 +37,7 @@ section h2
 {
     margin: left 200px;
     font-size: 4em;
-    color: #fff;
+    color: rgb(255, 255, 255);
     margin-bottom: 20px;
 }
 section .container
@@ -81,8 +81,8 @@ section .container .content
     z-index: 1;
     max-width: 400px;
     color:fff;
-    box-shadow: 0 25px 35px rgba(255, 255, 255, 0.1);
-    border-bottom: 6px solid #fff;
+    box-shadow: 0 25px 35px rgba(0, 0, 0, 0.1);
+    border-bottom: 6px solid rgb(255, 0, 212);
 
 }
 section:nth-child(even) .container .content
